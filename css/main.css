@@ -1,0 +1,31 @@
+/* This is some default styling for the exercise */
+body{
+	font-family:helvetica, arial, sans-serif;
+}
+
+
+
+header{
+	background:rgb(190, 190, 190);
+}
+
+.main{
+	background:rgb(150,150,150);
+}
+
+.sidebar{
+	background:rgb(210,210,210);
+}
+
+.card-row-container{
+	background:rgb(175,175,175);
+}
+
+.product-card{
+	background:rgb(225,225,225);
+
+}
+
+footer{
+	background:rgb(150,150,150);
+}
