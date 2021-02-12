@@ -1,0 +1,91 @@
+/* Use this file to create your CSS Grid Layout Content*/
+
+*{
+    box-sizing:border-box;
+}
+
+.grid-container{
+    display:grid;
+    /* grid-template-columns: 1fr 1fr 2fr 1fr 1fr; */
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows: 5rem 2fr 1fr 5rem;
+    min-height: 100vh;
+ 
+}
+
+header{
+    grid-column-start:1;
+    grid-column-end:9;
+
+}
+
+.main{
+    grid-column-start: 1;
+    grid-column-end:span 6;	
+}
+
+.sidebar{
+    grid-column: 7 / 9;
+	
+}
+
+.card-row-container{
+    grid-column: 2 / 8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.5rem;
+	
+}
+
+.product-card{
+	
+
+}
+
+.product-card:first-of-type{
+    margin-left: 0.5rem;
+}
+
+.product-card:last-of-type{
+    margin-right: 0.5rem;
+}
+
+footer{
+    grid-column: 1 / span 8;
+}
+
+@media screen and (max-width: 58em){
+    .card-row-container{
+        grid-column:1 / 9;
+    }
+    .product-card:first-of-type{
+        margin-left: 1rem;
+    }
+
+    .product-card:last-of-type{
+        margin-right: 1rem;
+    }
+
+    .sidebar {
+        grid-column-start: 1;
+        grid-column-end:span 8; 
+    }
+
+    .main {
+       grid-column-start: 1;
+       grid-column-end:span 8; 
+    }
+
+    .grid-container {
+        grid-template-rows: 6rem 1fr 1fr 1fr 4.5rem;
+
+    }
+
+}
+
+@media screen and (max-width: 43em){
+    .product-card{
+        grid-column:1 / span 3;
+        margin: 1rem;
+    }
+}
